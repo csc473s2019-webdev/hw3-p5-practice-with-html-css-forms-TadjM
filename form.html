@@ -4,9 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><strong>Servey Form </strong>></title>
+    <title id = "title"><strong>Servey Form </strong>></title>
+    <p id= "desciption"> This a form to record your satisfaction from our services </p>
+    <form id="survey-form" >
+        <input name="firstName" type="text"><br/>
+        <input id="email" type="email" 
+               pattern = ".+@gmail.com " size= "40" required ><br/>
+        <input id="Number" type="tel" name="phone" 
+               pattern = "[0-9]{3}-[0-9][{3}-[0-9]{4}" required><br/>
+        <select name="profession" > 
+            <option value=""> Student</option>
+            <option value=""> Full Time Job</option>
+            <option value=""> Full time learner</option>
+            <option value=""> Prefer not to say</option>
+            <option value=""> Other </option>
+            <button >
+        </select>
+    </form>
+        
 
-    
 </head>
 <body>
     
