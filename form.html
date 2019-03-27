@@ -7,12 +7,15 @@
     <title id = "title"><strong>Servey Form </strong>></title>
     <p id= "desciption"> This a form to record your satisfaction from our services </p>
     <form id="survey-form" >
+        <label for="firstName" id="name-label">Name:</label> 
         <input name="firstName" type="text"><br/>
+        <label for="email" id="email-label">Email:</label>
         <input id="email" type="email" 
                pattern = ".+@gmail.com " size= "40" required ><br/>
+        <label for="Number" id="number-label">Number:</label>
         <input id="Number" type="tel" name="phone" 
                pattern = "[0-9]{3}-[0-9][{3}-[0-9]{4}" required><br/>
-        <select name="profession" > 
+        <select name="profession" >
             <option value=""> Student</option>
             <option value=""> Full Time Job</option>
             <option value=""> Full time learner</option>
