@@ -8,20 +8,21 @@
     <p id= "desciption"> This a form to record your satisfaction from our services </p>
     <form id="survey-form" >
         <label for="firstName" id="name-label">Name:</label> 
-        <input name="firstName" type="text"><br/>
+        <input name="firstName" type="text" placeholder="Enter your name"><br/>
         <label for="email" id="email-label">Email:</label>
-        <input id="email" type="email" 
-               pattern = ".+@gmail.com " size= "40" required ><br/>
+        <input id="email" type="email" placeholder="Enter your email"
+               pattern = ".+@gmail.com " size= "10" required ><br/>
         <label for="Number" id="number-label">Number:</label>
-        <input id="Number" type="tel" name="phone" 
-               pattern = "[0-9]{3}-[0-9][{3}-[0-9]{4}" required><br/>
-        <select name="profession" >
-            <option value=""> Student</option>
-            <option value=""> Full Time Job</option>
-            <option value=""> Full time learner</option>
-            <option value=""> Prefer not to say</option>
-            <option value=""> Other </option>
-            <button >
+        <input id="Number" type="number" name="age" placeholder="Enter your age"
+                min ="1" max="200" required><br/>
+        <label for="profession">Which option best describes your current role</label>
+        <select name="profession" id= "dropdown" >
+            <option value="student"> Student</option>
+            <option value="job"> Full Time Job</option>
+            <option value="leraner"> Full time learner</option>
+            <option value="NA"> Prefer not to say</option>
+            <option value="other"> Other </option>
+            
         </select>
     </form>
         
