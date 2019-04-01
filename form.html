@@ -9,67 +9,84 @@
    
 </head>
 <body>
+    <h1 id="title">Survey Form</h1>
+    <div>
         <p id= "desciption"> This is a form to record your satisfaction from our services </p>
         <form id="survey-form" >
-        <div>
-        <div class="tab">
+        <div class="left">
             <label for="firstName" id="name-label">Name:</label> 
         </div>
-        <div class="rightTab">
+        <div class="right">
             <input name="firstName" type="text" placeholder="Enter your name">
         </div>
-        </div>
-        <div>
-        <div class="tab">
+        
+
+        <div class="left">
             <label for="email" id="email-label">Email:</label>
         </div>
-        <div class="rightTab">
+        <div class="right">
             <input id="email" type="email" placeholder="Enter your email"
                    pattern = ".+@gmail.com " size= "10" required >
         </div>
-        </div>
-        <div>
-        <div class = "tab">
+        
+        
+        <div class = "left">
             <label for="Number" id="number-label">Number:</label>
         </div>
-        <div class="rightTab">
+        <div class="right">
             <input id="Number" type="number" name="age" placeholder="Enter your age"
                     min ="1" max="90" required>
         </div>
+        <div class="left">
+            <label for="profession">What's your occupation:</label>
         </div>
-        <div class="tab">
-            <label for="profession">Which option best describes your current role</label>
-        </div>
-        <div class="">
+        <div class="right">
             <select name="profession" id= "dropdown" >
                 <option value="student"> Student</option>
                 <option value="job"> Full Time Job</option>
                 <option value="leraner"> Full time learner</option>
                 <option value="NA"> Prefer not to say</option>
                 <option value="other"> Other </option>
-            </select><br />
-            <div class="tab">
-            <label for ="rating"> How likely are you to recommend our services to a friend?</label>
-            </div>
-            <div class="rightTab">
+           </select>
+        </div>
+        
+        <div class="left">
+            <label for ="rating">Would you recommend us?</label>
+        </div>
+        <div class="right">
             <ul style= "list-style: none;">
                 <li class="radio"><label>Definitely<input name="radio-buttons" value="1"  type="radio" class="ratings" ></label></li>
                 <li class="radio"><label>Maybe<input name="radio-buttons" value="2"  type="radio" class="ratings" ></label></li>
                 <li class="radio"><label>Not sure<input name="radio-buttons" value="3"  type="radio" class="ratings" ></label></li>
             </ul>
-            </div>
-            <label for="preferences">Improvements</label>
+        </div>
+        <div class="left">
+            <label for="preferences">Improvements: </label>
+        </div>
+        <div class="right">
             <ul id ="preferences" style="list-style:none">
-                <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="ratings">Front-end Projects</label></li>
-                <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="ratings">Back-end Projects</li>
-                <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="ratings">Data Visualization</label></li>
-                <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="ratings">Challenges</label></li>        </ul>
+                    <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="ratings">Data Visualization</label></li>
+                    <li class="checkbox"><label><input name="prefer" value="2" type="checkbox" class="ratings">Challenges</label></li>
+                    <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="ratings">Open Source Community</label></li>
+                    <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="ratings">Gitter help rooms</label></li>
+                    <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="ratings">Videos</label></li>
+                    <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="ratings">City Meetups</label></li>
+                    <li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="ratings">Wiki</label></li>
+                    <li class="checkbox"><label><input name="prefer" value="8" type="checkbox" class="ratings">Forum</label></li>
             </ul>
+        </div>
+        
+        
+        <div class="left">
             <label for="comment">Any comments:</label>
-            <div>
+        </div>
+        <div class="right">
                 <textarea  id="comment" style="height:50px; resize:vertical" placeholder="Enter comments here" ></textarea>
-            </div>
+        </div>
+        <div>
             <button type="submit" id="submit" >Submit</button>
+        </div>
         </form>
+    </div>
 </body>
 </html>
