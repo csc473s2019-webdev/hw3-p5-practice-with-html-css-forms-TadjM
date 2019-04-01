@@ -11,19 +11,36 @@
 <body>
         <p id= "desciption"> This is a form to record your satisfaction from our services </p>
         <form id="survey-form" >
+        <div>
         <div class="tab">
             <label for="firstName" id="name-label">Name:</label> 
         </div>
         <div class="rightTab">
-            <input name="firstName" type="text" placeholder="Enter your name"><br/>
+            <input name="firstName" type="text" placeholder="Enter your name">
+        </div>
+        </div>
         <div>
+        <div class="tab">
             <label for="email" id="email-label">Email:</label>
+        </div>
+        <div class="rightTab">
             <input id="email" type="email" placeholder="Enter your email"
-                   pattern = ".+@gmail.com " size= "10" required ><br/>
+                   pattern = ".+@gmail.com " size= "10" required >
+        </div>
+        </div>
+        <div>
+        <div class = "tab">
             <label for="Number" id="number-label">Number:</label>
+        </div>
+        <div class="rightTab">
             <input id="Number" type="number" name="age" placeholder="Enter your age"
-                    min ="1" max="90" required><br/>
+                    min ="1" max="90" required>
+        </div>
+        </div>
+        <div class="tab">
             <label for="profession">Which option best describes your current role</label>
+        </div>
+        <div class="">
             <select name="profession" id= "dropdown" >
                 <option value="student"> Student</option>
                 <option value="job"> Full Time Job</option>

@@ -19,7 +19,10 @@ body {
 }
 .rightTab {
   display: inline-block;
-  text-align: left;
-  width: 48%;
-  vertical-align: middle;
+  text-align: center-right;
+  
+}
+.tab {
+  display: inline-block;
+  text-align: center-left;
 }
