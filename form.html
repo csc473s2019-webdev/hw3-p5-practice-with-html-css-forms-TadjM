@@ -11,14 +11,18 @@
 <body>
         <p id= "desciption"> This is a form to record your satisfaction from our services </p>
         <form id="survey-form" >
+        <div class="tab">
             <label for="firstName" id="name-label">Name:</label> 
+        </div>
+        <div class="rightTab">
             <input name="firstName" type="text" placeholder="Enter your name"><br/>
+        <div>
             <label for="email" id="email-label">Email:</label>
             <input id="email" type="email" placeholder="Enter your email"
                    pattern = ".+@gmail.com " size= "10" required ><br/>
             <label for="Number" id="number-label">Number:</label>
             <input id="Number" type="number" name="age" placeholder="Enter your age"
-                    min ="1" max="200" required><br/>
+                    min ="1" max="90" required><br/>
             <label for="profession">Which option best describes your current role</label>
             <select name="profession" id= "dropdown" >
                 <option value="student"> Student</option>
@@ -27,12 +31,16 @@
                 <option value="NA"> Prefer not to say</option>
                 <option value="other"> Other </option>
             </select><br />
+            <div class="tab">
             <label for ="rating"> How likely are you to recommend our services to a friend?</label>
+            </div>
+            <div class="rightTab">
             <ul style= "list-style: none;">
                 <li class="radio"><label>Definitely<input name="radio-buttons" value="1"  type="radio" class="ratings" ></label></li>
                 <li class="radio"><label>Maybe<input name="radio-buttons" value="2"  type="radio" class="ratings" ></label></li>
                 <li class="radio"><label>Not sure<input name="radio-buttons" value="3"  type="radio" class="ratings" ></label></li>
             </ul>
+            </div>
             <label for="preferences">Improvements</label>
             <ul id ="preferences" style="list-style:none">
                 <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="ratings">Front-end Projects</label></li>
@@ -46,7 +54,5 @@
             </div>
             <button type="submit" id="submit" >Submit</button>
         </form>
-            
-     
 </body>
 </html>
