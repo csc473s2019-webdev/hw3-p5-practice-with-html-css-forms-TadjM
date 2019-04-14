@@ -1,0 +1,19 @@
+{
+    "taj": {
+        "awscloudformation": {
+            "AuthRoleName": "gatsby-maps-20190414153203-authRole",
+            "UnauthRoleArn": "arn:aws:iam::561857462302:role/gatsby-maps-20190414153203-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::561857462302:role/gatsby-maps-20190414153203-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "gatsby-maps-20190414153203-deployment",
+            "UnauthRoleName": "gatsby-maps-20190414153203-unauthRole",
+            "StackName": "gatsby-maps-20190414153203",
+            "StackId": "arn:aws:cloudformation:us-east-1:561857462302:stack/gatsby-maps-20190414153203/fb4e77e0-5eeb-11e9-b5a2-0eee31812ac2"
+        },
+        "categories": {
+            "auth": {
+                "cognito17ef7110": {}
+            }
+        }
+    }
+}

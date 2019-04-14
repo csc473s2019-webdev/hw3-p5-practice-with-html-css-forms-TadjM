@@ -1,0 +1,13 @@
+{
+    "AppSyncApiName": "gatsbyMaps",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authcognito17ef7110",
+            "Outputs.UserPoolId"
+        ]
+    },
+    "schemaGraphql": "s3://gatsby-maps-20190414153203-deployment/amplify-appsync-files/schema.graphql.1555270632152",
+    "ResolverBucket": "gatsby-maps-20190414153203-deployment",
+    "ResolverRootKey": "amplify-appsync-files",
+    "DeploymentTimestamp": "1555270632152"
+}

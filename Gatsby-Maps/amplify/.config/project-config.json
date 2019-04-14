@@ -1,0 +1,17 @@
+{
+    "projectName": "Gatsby-Maps",
+    "version": "1.0",
+    "frontend": "javascript",
+    "javascript": {
+        "framework": "react",
+        "config": {
+            "SourceDir": "src",
+            "DistributionDir": "public",
+            "BuildCommand": "yarn run-script build",
+            "StartCommand": "yarn run-script develop"
+        }
+    },
+    "providers": [
+        "awscloudformation"
+    ]
+}
